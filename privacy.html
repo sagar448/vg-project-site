@@ -3,35 +3,45 @@
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>VG-project privacy policy</title></head>
 <body style="font-family: system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1rem; line-height: 1.5">
 <h1>VG-project privacy policy</h1>
-<p>Last updated: 1 November 2026</p>
+<p>Last updated: 6 November 2026</p>
 
 <h2>What VG-project is</h2>
-<p>VG-project is a private tool used only by the owner of the Benchtop Physics YouTube channel to publish that channel's own videos and to read that channel's own performance data. It uses YouTube API Services. By using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of your data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>VG-project is a private tool operated by Benchtop Physics and used only for its own YouTube channel. It publishes that channel's own videos and reads that channel's own performance data. It uses YouTube API Services. By using it you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, and Google's handling of your data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2>Information accessed</h2>
+<p>With your permission (Google sign-in), VG-project accesses only the YouTube channel you authorize. It:</p>
 <ul>
-<li>With your permission (Google sign-in), VG-project accesses the YouTube channel you authorize: its videos, playlists, comments on its videos, and its YouTube Analytics reports.</li>
-<li>It does not access other Google services, and it does not collect information from the channel's viewers beyond what YouTube API Services return for the channel's own videos (for example, public comments).</li>
+<li>uploads the channel's videos and reads their status, settings and statistics;</li>
+<li>reads the channel's YouTube Analytics reports;</li>
+<li>reads the list of the channel's uploads, with their titles and descriptions;</li>
+<li>reads up to 100 top-level comments on each of the channel's own videos, 7 and 28 days after publication, without the commenters' names. Their text is kept for at most 26 days and is sorted into themes by an AI model; only the theme counts, and the IDs of comments that dispute a fact, are kept longer (at most 36 months).</li>
 </ul>
+<p>For topic research it also runs public YouTube searches with an API key that cannot act for any account, and reads the public statistics of the videos found. It does not access other Google services.</p>
 
 <h2>How information is used</h2>
 <ul>
 <li>To upload and manage the channel's own videos.</li>
-<li>To measure how those videos perform, so that future videos can be improved.</li>
-<li>Information is never sold, never used for advertising, and never shared with third parties.</li>
+<li>To measure how those videos perform, and to plan future videos.</li>
+<li>To check whether a topic has already been covered on YouTube.</li>
 </ul>
+<p>VG-project calculates its own metrics, such as scores and ratios, for internal planning. They are kept separate from YouTube's figures and are never presented as YouTube data. Information is never sold, never used for advertising, and never shared with third parties. It is processed in the owner's Amazon Web Services accounts, including by AI models that run through Amazon Bedrock; VG-project calls those models only while Bedrock's request logging is turned off.</p>
 
 <h2>Storage and retention</h2>
+<p>The sign-in token and all data are stored in the owner's private Amazon Web Services account, encrypted at rest. Only the owner and VG-project's own publishing and analytics job can read the token.</p>
 <ul>
-<li>The sign-in token and data retrieved from YouTube API Services are stored in the owner's private Amazon Web Services account, encrypted at rest, and accessible only to the owner.</li>
-<li>Data obtained from YouTube API Services is refreshed or deleted within 30 days. Aggregated statistics derived from it may be kept.</li>
-<li>VG-project does not use cookies or tracking on this site.</li>
+<li>Raw responses from YouTube API Services are deleted within 26 days.</li>
+<li>Video titles and descriptions, including those of search results, are refreshed or deleted within 30 days.</li>
+<li>Statistics (such as views, likes and watch time), and the metrics VG-project calculates from them, are kept for at most 36 months.</li>
+<li>Every 6 hours VG-project confirms that its access is still authorized and that each of the channel's videos still exists. YouTube statistics about a video deleted from YouTube are removed; the metrics calculated from them expire under the 36-month limit.</li>
+<li>VG-project keeps the IDs of the channel's own videos and its record of what it uploaded and when.</li>
 </ul>
+<p>This site uses no cookies or tracking.</p>
 
-<h2>Revoking access</h2>
-<p>You can revoke VG-project's access at any time on your Google Account's <a href="https://security.google.com/settings/security/permissions">third-party access page</a>. To have stored data deleted, email the contact below.</p>
+<h2>Revoking access and deletion</h2>
+<p>You can revoke VG-project's access at any time on your Google Account's <a href="https://security.google.com/settings/security/permissions">third-party access page</a>. When access is revoked, VG-project automatically deletes the channel data it obtained with your permission (analytics, statistics, the metrics calculated from them, titles, descriptions and comments), once two of its analytics runs, 6 hours apart, have been refused; normally that is within a day. It keeps only the video IDs and upload record described above. To have stored data deleted at any other time, email the contact below; it is deleted within 7 days.</p>
 
 <h2>Contact</h2>
 <p><a href="mailto:digital.dynamics.consult@gmail.com">digital.dynamics.consult@gmail.com</a></p>
+<p><a href="index.html">Home</a> · <a href="terms.html">Terms of service</a></p>
 </body>
 </html>
